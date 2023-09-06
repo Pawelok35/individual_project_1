@@ -1,0 +1,36 @@
+{
+        "products":[
+           {
+              "id":"beams",
+              "name":"LA LAGARTIJA",
+              "roasting":5,
+              "intensity":6,
+              "description":"Mysterious and treacherous... The best choice for the start of your journey! It will provide you a rich delicious flavor.",
+              "images":[
+                 "<img class=\"active\" src=\"images/coffe-1.png\">"
+              ]
+           },
+           {
+              "id":"beams",
+              "name":"EL TIGRE",
+              "roasting":8,
+              "intensity":9,
+              "description":"Really dark coffee, only for the real gourmets. It has bitter flavour of grapefruits and is mixed with a little bit of peanuts with carmel.",
+              "images":[
+                 "<img class=\"active\" src=\"images/coffe-2.png\">"
+              ]
+              
+              
+           },
+           {
+              "id":"beams",
+              "name":"LA CUCARACHA",
+              "roasting":3,
+              "intensity":7,
+              "description":"Sweet and intense with a big amount of different flavors. Caramel, grapes, strawberry, you name it! It's great choice for warm summer days.",
+              "images":[
+                 "<img class=\"active\" src=\"images/coffe-3.png\">"
+              ]
+            }                 
+              ]
+}
