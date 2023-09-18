@@ -19,6 +19,36 @@ $colour-white: #fff;
   transform: translateX(-50%);
 }
 
+.underline-product{
+  position: relative;
+}
+
+.underline-product::before {
+  content: "";
+  position: absolute;
+  left: 10%;
+  bottom: 80%;
+  width: 20%;
+  height: 3px;
+  background-color: $colour-brown ;
+  transform: translateX(-50%);
+}
+
+.space{
+  padding-left: 120px;
+}
+
+.type-of {
+  font-family: 'Source sans 3';
+  font-size: 14px;
+  font-style: oblique 100deg;
+  font-weight: bold;
+}
+
+.type-of span{
+color: $colour-brown;
+font-weight: bold;
+}
 
 /* Navigation */
 .navigation ul {   
@@ -48,6 +78,7 @@ $colour-white: #fff;
   font-size: 40px;
   font-family: 'Source Sans 3', cursive;
 }
+
 .logo-a {
   padding: 0;
   margin: 0;
@@ -66,7 +97,7 @@ $colour-white: #fff;
   max-width: 100%;
   background-position: center center;
   background-size: cover;
-  background-image: url(/images/background.png);
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/background.png);
 }
 
 .justify {
@@ -104,7 +135,7 @@ h1 {
   justify-content: center;
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
   font-style: oblique 100deg;
 }
 
@@ -129,10 +160,18 @@ h1 {
 }
 
 .btn-one {
-  color: $colour-brown;
+  color: $colour-white;
 }
 
-/* Services */
+/* Aboutr US */
+.services {
+  position: relative;
+  padding: 50px 0;
+  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/about-us.jpg);
+  background-size: cover;
+  height: 80vh;
+}
+
 .services-title {
   justify-content: center;
   align-items: center;
@@ -142,8 +181,8 @@ h1 {
   font-size: 40px;
   margin-bottom: 0;
   padding: 0;
-  
 }
+
 .page-service {
   margin-bottom: 0;
   color: $colour-brown;
@@ -152,20 +191,35 @@ h1 {
 .services-title a {
   font-size: 15px;
   font-style: italic;
+}
 
+.left {
+  color: $colour-white;
+  text-align: left;
+  justify-content: baseline;
+  font-size: 30px;
+  font-style: italic;
+}
+
+.right {
+  color: $colour-white;
+  text-align: right;
+  justify-content: end;
+  font-size: 30px;
+  font-style: italic;
 }
 
 h3 {
   font-size: 15px;
   font-style: italic;
 }
-/* Services */
-.services {
-  padding: 80px 0;
-  background-image: url(images/about-us.jpg);
-}
 
 /* Footer */
+.footer .row {
+  text-align: center;
+  justify-content: center;
+}
+
 .logo2 {
   
   list-style-type: none;
@@ -182,17 +236,21 @@ section .footer {
   align-items: center;
 }
 
-/* Portofolio */
+/* PRODUCTS */
 
 .portofolio {
-  background: #efeded;
+  background: $colour-white;
   margin-bottom: 50px;
+}
+
+.portofolio .row {
+  justify-content: center;
 }
 
 .card-image img { 
   width: 100%;
   display: block;
-  height: 400px;   
+  height: 300px;   
 }
 
 .card-body {
@@ -206,7 +264,7 @@ section .footer {
 
 }
 
-.card-body p {
+.card-body .space {
   margin-top: 0;
   font-size: 18px;
   font-style: italic;
