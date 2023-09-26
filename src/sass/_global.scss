@@ -2,7 +2,7 @@
 $colour-black: #000;
 $colour-brown: #bea67c;
 $colour-white: #fff;
-
+$transition: all 1s;
 /*Underline*/
 .underline {
   position: relative;
@@ -46,8 +46,8 @@ $colour-white: #fff;
 }
 
 .type-of span{
-color: $colour-brown;
-font-weight: bold;
+  color: $colour-brown;
+  font-weight: bold;
 }
 
 /* Navigation */
@@ -60,6 +60,7 @@ font-weight: bold;
   flex-direction: row;
   justify-content: end;
   font-size: 20px;
+  cursor: pointer;
 }
 
 .navigation ul li {
@@ -97,7 +98,7 @@ font-weight: bold;
   max-width: 100%;
   background-position: center center;
   background-size: cover;
-  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/background.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/background.png);
 }
 
 .justify {
@@ -167,10 +168,11 @@ h1 {
 .services {
   position: relative;
   padding: 50px 0;
-  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/about-us.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/about-us.jpg);
   background-size: cover;
   height: 80vh;
 }
+
 
 .services-title {
   justify-content: center;
@@ -272,4 +274,120 @@ section .footer {
 
 .services-images-row {
   padding-top: 50px;
+}
+
+/* Contact us */
+
+.contact {
+  flex-wrap: wrap;
+  background: $colour-brown;
+}
+
+.contact-title {
+  color: #fff;
+  font-size: 48px;
+  margin: 0 0 72px 0;
+}
+
+.contact-data {
+  flex: 1 0 0;
+}
+
+form {
+  flex: 2 0 0;
+}
+
+fieldset {
+  border: none;
+  width: 100%;
+  margin: 10px auto;
+}
+
+input {
+  background: $colour-brown;
+}
+
+.form-input-container {
+  border-bottom: 3px solid #fff;
+}
+
+input {
+  width: 100%;
+  color: #fff;
+  background: $colour-brown;
+  border: none;
+  padding: 8px;
+  height: 35px;
+}
+
+textarea {
+  background: $colour-brown;
+  border: none;
+  color: $colour-white;
+  height: 200px;
+}
+
+textarea::placeholder {
+  color: $colour-black
+}
+
+input::placeholder {
+  color: $colour-black; 
+}
+
+button[type='submit'] {
+  display: inline-block;
+  min-width: 160px;
+  margin: 24px auto 0 auto;
+  padding: 16px;
+  border-radius: 5px;
+  font-family: Inconsolata;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-width: 2px;
+  border-style: solid;
+  background-position: 100% 0;
+  background-size: 300%;
+  transition: $transition;
+}
+
+.btn-six {
+  border-color: $colour-white;
+  color: $colour-white;
+  background: $colour-brown;
+  background-image: linear-gradient(90deg, $colour-brown 50%, transparent 50%);
+}
+
+.btn-six:hover {
+  color: $colour-white;
+}
+
+/* Contact us */
+
+.contact-data {
+  color: $colour-white;
+  padding-left: 96px;
+}
+
+.contact-data-header span{
+  font-size: 14px;
+  font-weight: 100;
+}
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+}
+.container-contact {
+  max-width: 1140px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.contact-title {
+  color: $colour-brown;
+  font-size: 48px;
+  margin: 0 0 72px 0;
 }
